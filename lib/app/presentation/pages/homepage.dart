@@ -67,7 +67,6 @@ class HomePage extends StatelessWidget {
                   alignment: Alignment.topCenter,
                   child: BlocBuilder<WeatherBlocBloc, WeatherAppState>(
                     builder: (context, state) {
-                      print("State: $state");
                       if (state is WeatherAppSuccess) {
                         return buildSuccessUI(height, width, state);
                       } else if (state is WeatherAppLoading) {

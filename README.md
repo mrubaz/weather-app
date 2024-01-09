@@ -1,16 +1,49 @@
-# weather_app
+# Weather App
+This Flutter project serves as a weather application, providing real-time weather information based on the user's location.
 
-A new Flutter project.
+# Getting Started
+If you're new to Flutter, these resources will help you get started:
 
-## Getting Started
+Write your first Flutter app
+Useful Flutter samples
+For comprehensive Flutter development assistance, refer to the online documentation offering tutorials, samples, and a full API reference.
 
-This project is a starting point for a Flutter application.
+# Installation
+Follow these steps to run the project locally:
 
-A few resources to get you started if this is your first Flutter project:
+Clone the repository:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+bash
+Copy code
+git clone https://github.com/your-username/weather_app.git
+Navigate to the project directory:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+bash
+Copy code
+cd weather_app
+Install dependencies:
+
+bash
+Copy code
+flutter pub get
+# Configuration
+Obtain a free API key from OpenWeatherMap by creating an account.
+
+Replace the placeholder API key in main.dart with your actual API key:
+
+dart
+Copy code
+String API_KEY = "your_actual_api_key";
+
+# Run the App
+Run the app on an emulator or a physical device:
+
+bash
+Copy code
+flutter run
+This command will build and run the app on your connected device.
+
+# Features
+Displays current weather information based on user's location.
+Features a beautiful UI with animations.
+Implements error handling for cases like an invalid API key or location issues.

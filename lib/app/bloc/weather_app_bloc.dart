@@ -13,7 +13,6 @@ class WeatherBlocBloc extends Bloc<WeatherAppEvent, WeatherAppState> {
     on<FetchWeather>((event, emit) async {
       emit(WeatherAppLoading());
       try {
-        print('HELO world${event.position.latitude}');
         WeatherFactory wf = WeatherFactory(API_KEY);
 
         Weather weather = await wf.currentWeatherByLocation(
