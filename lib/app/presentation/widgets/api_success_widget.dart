@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import '../../bloc/weather_app_bloc.dart';
+import 'show_icon_widget.dart';
 
 Widget buildSuccessUI(double height, double width, WeatherAppSuccess state) {
   return SizedBox(
@@ -30,10 +31,7 @@ Widget buildSuccessUI(double height, double width, WeatherAppSuccess state) {
             ),
           ),
         ),
-        Image.asset(
-          "assets/3.png",
-          width: width * .75,
-        ),
+        getWeatherIcon(state.weather.weatherConditionCode!),
         Text(
           '${state.weather.temperature!.celsius!.round()}°C',
           style: const TextStyle(
