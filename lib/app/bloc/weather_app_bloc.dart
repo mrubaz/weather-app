@@ -19,6 +19,7 @@ class WeatherBlocBloc extends Bloc<WeatherAppEvent, WeatherAppState> {
           event.position.latitude,
           event.position.longitude,
         );
+        print("Weather: $weather");
 
         emit(WeatherAppSuccess(weather));
       } catch (e) {
